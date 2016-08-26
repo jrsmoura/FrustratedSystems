@@ -5,11 +5,10 @@
 """
 
 import numpy as np
+import base.PhysQuant.Initialization.InitialConditions as conf
 
 L = 8
 
-#Ferromagnetic initial configuration
-config = np.ones((L,L))
-
+config = conf.Ferromag(L)
 
 print config
