@@ -2,7 +2,7 @@ import numpy as np
 
 
 # Antiferromagnetic initial condition
-def antiferromag(L):  # generates a random spin config
+def antiferromag(L):
     state = 2 * np.random.randint(2, size=(L, L)) - 1
     return state
 
