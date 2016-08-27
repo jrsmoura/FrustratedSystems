@@ -9,6 +9,6 @@ import base.PhysQuant.Initialization.InitialConditions as conf
 
 L = 8
 
-config = conf.Ferromag(L)
+config = conf.ferromagnet(L)
 
 print config
