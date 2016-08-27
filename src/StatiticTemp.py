@@ -1,7 +1,8 @@
 """
-    Arquivo principal
+    Calcula os parâmetros físicos a uma temperatura fixa
     author: JR Steiner
     jrsmoura@uesc.br
+    date: 27/08/2016
 """
 
 import matplotlib.pyplot as plt

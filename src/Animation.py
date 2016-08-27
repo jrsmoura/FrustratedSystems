@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    Arquivo principal
+    Arquivo para geração de animações
     author: JR Steiner
     jrsmoura@uesc.br
+    date: 27/08/2016
 """
 
 import matplotlib.animation as animation
