@@ -8,6 +8,6 @@ import base.Initialization.InitialConditions as conf
 
 L = 8
 
-config = conf.ferromagnet(L)
+config = conf.antiferromag(L)
 
 print config
