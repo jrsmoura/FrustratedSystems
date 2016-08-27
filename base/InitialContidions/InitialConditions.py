@@ -11,5 +11,5 @@ def ferromagnet(L):
     state = np.matrix(np.ones((L,L)))
     return state
 
-def threestates(L):
+def threestates(L): #TODO
     state = 2 * np.random.randint(3, size=(L, L)) - 1

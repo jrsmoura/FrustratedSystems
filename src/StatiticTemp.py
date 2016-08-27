@@ -10,9 +10,6 @@ import numpy as np
 
 import base.InitialContidions.InitialConditions as conf
 import base.MonteCarloMove.MonteCarlo as mc
-import base.PhysQuant.BasicCalcs as cl
-from matplotlib import cm as CM
-from matplotlib import mlab as ML
 
 
 

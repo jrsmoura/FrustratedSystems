@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-    Arquivo principal
+    Arquivo principal -> evolução da temperatura
     author: JR Steiner
     jrsmoura@uesc.br
-    date: 27/08/2016
+    date: 28/08/2016
 """
 
 import matplotlib.pyplot as plt
