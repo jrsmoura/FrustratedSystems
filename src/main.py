@@ -4,7 +4,7 @@
     jrsmoura@uesc.br
 """
 
-import base.Initialization.InitialConditions as conf
+import base.InitialContidions.InitialConditions as conf
 
 L = 8
 
