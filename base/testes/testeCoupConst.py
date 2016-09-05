@@ -5,7 +5,7 @@ import base.InitialContidions.InitialConditions as initial
 
 x = initial.CoupConsts(64)
 
-plt.hist2d(x,  bins = 50)
+y = np.split(x, 2)
 
 
-print x
+print y
