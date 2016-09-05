@@ -33,6 +33,7 @@ T = np.linspace(1., 4., nt)
 for m in range(len(T)):
     E1 = M1 = E2 = M2 = 0
     config = conf.ferromagnet(L)
+    J = conf.CoupConsts(L)
     #termalization process
     for i in range(eqSteps):
         mc.mcmove(config, 1.0/T[m], L)
