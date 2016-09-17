@@ -36,10 +36,10 @@ for m in range(len(T)):
     config = conf.ferromagnet(L)
     #temalization process
     for i in range(eqSteps):
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
     for i in range(mcSteps):
         # monte carlo moves
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
 ani = animation.ArtistAnimation(fig, ims, blit=True, interval=1, repeat_delay=100)
 ani.save('dynamic_images.gif')
 plt.show()

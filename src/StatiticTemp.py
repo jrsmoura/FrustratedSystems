@@ -22,9 +22,9 @@ T = 2.5
 config = conf.ferromagnet(L)
 
 for i in range(eqSteps):
-    mc.mcmove(config, 1.0/T, L)
+    mc.mcmove2d(config, 1.0 / T, L)
 for i in range(mcSteps):
-    mc.mcmove(config, 1.0/T, L)   # monte carlo moves
+    mc.mcmove2d(config, 1.0 / T, L)   # monte carlo moves
 
 
 plt.figure(2)
