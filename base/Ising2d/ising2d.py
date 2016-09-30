@@ -30,9 +30,9 @@ for m in range(len(T)):
 
     config = conf.ferromagnet(L)
     for i in range(eqSteps):
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
     for i in range(mcSteps):
-        mc.mcmove(config, 1.0/T[m], L)   # monte carlo moves
+        mc.mcmove2d(config, 1.0 / T[m], L)   # monte carlo moves
         Ene = cl.calcEnergy(config, L)        # calculate the energy
 
         Mag = cl.calcMag(config)           # calculate the magnetisation

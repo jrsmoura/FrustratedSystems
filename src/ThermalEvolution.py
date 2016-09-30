@@ -20,8 +20,8 @@ L = 16
 #Number of temperatures
 nt = 128
 
-mcSteps = 3000
-eqSteps = 500
+mcSteps = 5000
+eqSteps = 1000
 Energy = np.zeros(nt)
 Magnetization = np.zeros(nt)
 SpecificHeat = np.zeros(nt)
@@ -36,10 +36,10 @@ for m in range(len(T)):
     J = conf.CoupConsts(L)
     #termalization process
     for i in range(eqSteps):
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
     for i in range(mcSteps):
         # monte carlo moves
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
         # calculate the energy
         Ene = cl.calcEnergy(config, L)
         # calculate the magnetisation

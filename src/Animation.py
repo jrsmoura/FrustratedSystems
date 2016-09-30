@@ -15,33 +15,33 @@ from matplotlib import colorbar
 import base.InitialContidions.InitialConditions as conf
 import base.MonteCarloMove.MonteCarlo as mc
 
-L = 64
-nt = 256
+L = 8
+nt = 1024
 
-dpi = 260
+dpi = 120
 
-mcSteps = 3000
-eqSteps = 500
+mcSteps = 10000
+eqSteps = 3000
 
 ims =[]
 fig = plt.figure()
 #temperature
-T  = np.linspace(1., 4., nt)
-config = conf.ferromagnet(L)
-
+T  = np.linspace(.9, 1., nt)
+#config = conf.ferromagnet(L)
+config = conf.threestates(L)
 
 for m in range(len(T)):
-    im = plt.imshow(config ,interpolation='lanczos', animated=True)
-    ims.append([im])
-    config = conf.ferromagnet(L)
+    config = conf.threestates(L)
     #temalization process
     for i in range(eqSteps):
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
     for i in range(mcSteps):
         # monte carlo moves
-        mc.mcmove(config, 1.0/T[m], L)
+        mc.mcmove2d(config, 1.0 / T[m], L)
+    im = plt.imshow(config, interpolation='lanczos', animated=True)
+    ims.append([im])
 ani = animation.ArtistAnimation(fig, ims, blit=True, interval=1, repeat_delay=100)
-ani.save('dynamic_images.gif')
+ani.save('6_BaixaT_512Passos.gif')
 plt.show()
 
 print 'Cabou .... vai ver se salvou o arquivo cert, mané!'
