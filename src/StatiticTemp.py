@@ -7,39 +7,32 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-
+import matplotlib.animation as animation
 import base.InitialContidions.InitialConditions as conf
 import base.MonteCarloMove.MonteCarlo as mc
 
 
 
-L = 128
+L = 16
 
 mcSteps = 5000
 eqSteps = 3000
-T = 2.32
+T = 0.000001
 
-config = conf.ferromagnet(L)
+ims =[]
+fig = plt.figure()
+
+config = conf.threestates(L)
 
 for i in range(eqSteps):
     mc.mcmove2d(config, 1.0 / T, L)
-plt.figure(2)
-#plt.imshow(config, interpolation='bicubic')
-plt.imshow(config, interpolation='lanczos', animated=True)
-plt.grid(True)
-#plt.colorbar()
-plt.show()
-
 
 for i in range(mcSteps):
     mc.mcmove2d(config, 1.0 / T, L)   # monte carlo moves
-
-plt.figure(2)
-#plt.imshow(config, interpolation='bicubic')
-plt.imshow(config, interpolation='lanczos', animated=True)
-plt.grid(True)
-#plt.colorbar()
+    im = plt.imshow(config, interpolation='lanczos', animated=True)
+    ims.append([im])
+ani = animation.ArtistAnimation(fig, ims, blit=True, interval=1, repeat_delay=100)
+ani.save('6_BaixaT_512Passos.gif')
 plt.show()
-
 
 print config

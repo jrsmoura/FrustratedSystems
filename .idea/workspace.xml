@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="92763331-95c4-463d-8b98-64e5e740fd5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StatiticTemp.py" afterPath="$PROJECT_DIR$/src/StatiticTemp.py" />
     </list>
     <ignored path="FrutratedSystems.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +26,7 @@
       <file leaf-file-name="MonteCarlo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/MonteCarloMove/MonteCarlo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="405">
               <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
               <folding />
             </state>
@@ -42,24 +43,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Animation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Animation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Animation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
+                <element signature="e#158#198#0" expanded="true" />
                 <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatiticTemp.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StatiticTemp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StatiticTemp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="450">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+              <folding>
+                <element signature="e#131#162#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,16 +102,15 @@
         <option value="$PROJECT_DIR$/base/testes/testeCoupConst.py" />
         <option value="$USER_HOME$/FC/directPi/directpi.py" />
         <option value="$PROJECT_DIR$/base/MonteCarloMove/MonteCarlo.py" />
-        <option value="$PROJECT_DIR$/src/StatiticTemp.py" />
         <option value="$PROJECT_DIR$/src/ThermalEvolution.py" />
         <option value="$PROJECT_DIR$/base/InitialContidions/InitialConditions.py" />
         <option value="$PROJECT_DIR$/src/Animation.py" />
+        <option value="$PROJECT_DIR$/src/StatiticTemp.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1922" />
+    <option name="width" value="1920" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -135,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,6 +236,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -242,7 +245,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/FC/directPi/directpi.py" />
   </component>
-  <component name="RunManager" selected="Python.Animation">
+  <component name="RunManager" selected="Python.StatiticTemp">
     <configuration default="false" name="directpi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -471,8 +474,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.Animation" />
-        <item index="1" class="java.lang.String" itemvalue="Python.StatiticTemp" />
+        <item index="0" class="java.lang.String" itemvalue="Python.StatiticTemp" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Animation" />
         <item index="2" class="java.lang.String" itemvalue="Python.ThermalEvolution" />
         <item index="3" class="java.lang.String" itemvalue="Python.directpi" />
       </list>
@@ -492,29 +495,37 @@
       <option name="presentableId" value="Default" />
       <updated>1472313204124</updated>
     </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/FrutratedSystems.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;Results/Ising32_v1.gif&#10;#&#9;Results/Ising64.gif&#10;#&#9;src/Ising32_v1.gif&#10;#&#9;src/Ising64.gif&#10;#&#9;src/results/Ising32_v1.gif&#10;#&#9;src/results/Ising64.gif&#10;">
+      <created>1475253684603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1475253684603</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1055" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19273302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19240907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31049252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -529,6 +540,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/FrutratedSystems.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;Results/Ising32_v1.gif&#10;#&#9;Results/Ising64.gif&#10;#&#9;src/Ising32_v1.gif&#10;#&#9;src/Ising64.gif&#10;#&#9;src/results/Ising32_v1.gif&#10;#&#9;src/results/Ising64.gif&#10;" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/FrutratedSystems.iml&#10;#&#9;.idea/misc.xml&#10;#&#9;Results/Ising32_v1.gif&#10;#&#9;Results/Ising64.gif&#10;#&#9;src/Ising32_v1.gif&#10;#&#9;src/Ising64.gif&#10;#&#9;src/results/Ising32_v1.gif&#10;#&#9;src/results/Ising64.gif&#10;" />
   </component>
@@ -537,6 +549,51 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/base/MonteCarloMove/MonteCarlo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ThermalEvolution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Animation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#158#198#0" expanded="true" />
+            <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StatiticTemp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#131#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/InitialContidions/InitialConditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base/MonteCarloMove/MonteCarlo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -558,6 +615,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -567,7 +625,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#131#162#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -592,6 +652,7 @@
         <state relative-caret-position="495">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="50" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -619,6 +680,7 @@
         <state relative-caret-position="405">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="50" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -646,6 +708,7 @@
         <state relative-caret-position="405">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="50" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -672,6 +735,7 @@
         <state relative-caret-position="405">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="50" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -698,6 +762,7 @@
         <state relative-caret-position="405">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="50" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -724,6 +789,7 @@
         <state relative-caret-position="405">
           <caret line="33" column="50" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="50" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -743,6 +809,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
           </folding>
         </state>
@@ -764,14 +831,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py" />
-    <entry file="file://$PROJECT_DIR$/src/StatiticTemp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ThermalEvolution.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -780,14 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random_initThermo.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/random_initThermo.gif" />
     <entry file="file://$PROJECT_DIR$/base/MonteCarloMove/MonteCarlo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="405">
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding />
         </state>
@@ -801,17 +856,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/random_init_2.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/random_init_2.gif" />
     <entry file="file://$PROJECT_DIR$/src/Animation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
+            <element signature="e#158#198#0" expanded="true" />
             <marker date="1475251775253" expanded="true" signature="819:827" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StatiticTemp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <element signature="e#131#162#0" expanded="true" />
           </folding>
         </state>
       </provider>
