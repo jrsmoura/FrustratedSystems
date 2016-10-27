@@ -20,28 +20,28 @@ nt = 1024
 
 dpi = 120
 
-mcSteps = 10000
+mcSteps = 4000
 eqSteps = 3000
 
 ims =[]
 fig = plt.figure()
 #temperature
-T  = np.linspace(.9, 1., nt)
-#config = conf.ferromagnet(L)
-config = conf.threestates(L)
+#T  = np.linspace(.9, 1., nt)
+T = 0.1
 
-for m in range(len(T)):
-    config = conf.threestates(L)
-    #temalization process
-    for i in range(eqSteps):
-        mc.mcmove2d(config, 1.0 / T[m], L)
-    for i in range(mcSteps):
-        # monte carlo moves
-        mc.mcmove2d(config, 1.0 / T[m], L)
+config = conf.ferromagnet(L)
+#config = conf.threestates(L)
+
+#temalization process
+#for i in range(eqSteps):
+#    mc.mcmove2d(config, 1.0 / T, L)
+for i in range(mcSteps):
+    # monte carlo moves
+    mc.mcmove2d(config, 1.0 / T, L)
     im = plt.imshow(config, interpolation='lanczos', animated=True)
-    ims.append([im])
+ims.append([im])
 ani = animation.ArtistAnimation(fig, ims, blit=True, interval=1, repeat_delay=100)
-ani.save('6_BaixaT_512Passos.gif')
+ani.save('6_BaixaT_5000Passos.gif')
 plt.show()
 
 print 'Cabou .... vai ver se salvou o arquivo cert, mané!'

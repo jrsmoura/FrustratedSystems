@@ -15,3 +15,14 @@ def calcEnergy(config, L):
 def calcMag(config):
     mag = np.sum(config)
     return mag
+
+# Order parameter calcularion
+def orderParameter(config):
+    n1, n2 = .0, .0
+#    newConf = np.squeeze(np.asarray(config))
+    for i in range(len(config)):
+        if (config[i].any() == 1.):
+            n1 += 1.
+        else:
+            n2 += 1.
+    return np.abs(n1 - n2)/float(n1 + n2)

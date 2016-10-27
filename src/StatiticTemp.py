@@ -13,26 +13,34 @@ import base.MonteCarloMove.MonteCarlo as mc
 
 
 
-L = 16
+L = 64
 
-mcSteps = 5000
+mcSteps = 10000000
 eqSteps = 3000
-T = 0.000001
+T = 0.0001
 
 ims =[]
 fig = plt.figure()
 
-config = conf.threestates(L)
+#config = conf.threestates(L)
+#config = conf.ferromagnet(L)
+
+config = conf.randomstates(L)
 
 for i in range(eqSteps):
     mc.mcmove2d(config, 1.0 / T, L)
 
 for i in range(mcSteps):
+    print "mcStep = ", i
     mc.mcmove2d(config, 1.0 / T, L)   # monte carlo moves
-    im = plt.imshow(config, interpolation='lanczos', animated=True)
-    ims.append([im])
-ani = animation.ArtistAnimation(fig, ims, blit=True, interval=1, repeat_delay=100)
-ani.save('6_BaixaT_512Passos.gif')
+#    im = plt.imshow(config, interpolation='lanczos', animated=True)
+#   ims.append([im])
+#ani = animation.ArtistAnimation(fig, ims, blit=True, interval=1, repeat_delay=100)
+#ani.save('6_BaixaT_512Passos.gif')
+
+plt.imshow(config, interpolation='lanczos')
+plt.savefig("1e-45e6.png")
+
 plt.show()
 
-print config
+#print config

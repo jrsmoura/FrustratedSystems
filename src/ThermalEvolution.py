@@ -16,11 +16,11 @@ import base.MonteCarloMove.MonteCarlo as mc
 import base.PhysQuant.BasicCalcs as cl
 
 #Lattice size
-L = 16
+L = 8
 #Number of temperatures
 nt = 128
 
-mcSteps = 5000
+mcSteps = 500000
 eqSteps = 1000
 Energy = np.zeros(nt)
 Magnetization = np.zeros(nt)
@@ -32,8 +32,9 @@ T = np.linspace(1., 4., nt)
 
 for m in range(len(T)):
     E1 = M1 = E2 = M2 = 0
-    config = conf.ferromagnet(L)
-    J = conf.CoupConsts(L)
+    config = conf.randomstates(L)
+    print "T = ", m
+#    J = conf.CoupConsts(L)
     #termalization process
     for i in range(eqSteps):
         mc.mcmove2d(config, 1.0 / T[m], L)
@@ -58,24 +59,24 @@ for m in range(len(T)):
 #plot the energy and Magnetization
 f = plt.figure(figsize=(18, 10), dpi=80, facecolor='w', edgecolor='k');
 
-sp =  f.add_subplot(2, 2, 1 );
+sp = f.add_subplot(2, 2, 1 );
 plt.plot(T, Energy, 'o', color="#A60628", label=' Energy');
 plt.xlabel("Temperature (T)", fontsize=20);
 plt.ylabel("Energy ", fontsize=20);
 
-sp =  f.add_subplot(2, 2, 2 );
+sp = f.add_subplot(2, 2, 2 );
 plt.plot(T, abs(Magnetization), '*', label='Magnetization');
 plt.xlabel("Temperature (T)", fontsize=20);
 plt.ylabel("Magnetization ", fontsize=20);
 
 
-sp =  f.add_subplot(2, 2, 3 );
+sp = f.add_subplot(2, 2, 3 );
 plt.plot(T, SpecificHeat, 'd', color="black", label='Specific Heat');
 plt.xlabel("Temperature (T)", fontsize=20);
 plt.ylabel("Specific Heat ", fontsize=20);
 
 
-sp =  f.add_subplot(2, 2, 4 );
+sp = f.add_subplot(2, 2, 4 );
 plt.plot(T, Susceptibility, '+', color="green", label='Specific Heat');
 plt.xlabel("Temperature (T)", fontsize=20);
 plt.ylabel("Susceptibility", fontsize=20);
