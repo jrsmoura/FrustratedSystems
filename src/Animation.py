@@ -16,7 +16,7 @@ import base.InitialContidions.InitialConditions as conf
 import base.MonteCarloMove.MonteCarlo as mc
 
 L = 8
-nt = 1024
+nt = 512
 
 dpi = 120
 
@@ -27,7 +27,7 @@ ims =[]
 fig = plt.figure()
 #temperature
 #T  = np.linspace(.9, 1., nt)
-T = 0.1
+T = 2.0
 
 config = conf.ferromagnet(L)
 #config = conf.threestates(L)

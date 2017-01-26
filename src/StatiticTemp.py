@@ -15,17 +15,16 @@ import base.MonteCarloMove.MonteCarlo as mc
 
 L = 64
 
-mcSteps = 10000000
+mcSteps = 10000
 eqSteps = 3000
-T = 0.0001
+T = 2.5
 
 ims =[]
 fig = plt.figure()
 
-#config = conf.threestates(L)
+config = conf.threestates(L)
 #config = conf.ferromagnet(L)
-
-config = conf.randomstates(L)
+#config = conf.randomstates(L)
 
 for i in range(eqSteps):
     mc.mcmove2d(config, 1.0 / T, L)
@@ -39,7 +38,7 @@ for i in range(mcSteps):
 #ani.save('6_BaixaT_512Passos.gif')
 
 plt.imshow(config, interpolation='lanczos')
-plt.savefig("1e-45e6.png")
+plt.savefig("t4_l64.png")
 
 plt.show()
 

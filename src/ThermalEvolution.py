@@ -16,12 +16,12 @@ import base.MonteCarloMove.MonteCarlo as mc
 import base.PhysQuant.BasicCalcs as cl
 
 #Lattice size
-L = 8
+L = 10
 #Number of temperatures
-nt = 128
+nt = 300
 
-mcSteps = 500000
-eqSteps = 1000
+mcSteps = 15000
+eqSteps = 5000
 Energy = np.zeros(nt)
 Magnetization = np.zeros(nt)
 SpecificHeat = np.zeros(nt)
